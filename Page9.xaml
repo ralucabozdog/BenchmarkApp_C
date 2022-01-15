@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfApp1.Page9"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Virtual and physical address size" Height="315.182" Width="1033.448" Background="#D6ECFF" WindowStartupLocation="CenterScreen">
+    <ScrollViewer >
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label FontFamily ="Georgia" FontSize ="16" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top">
+                <TextBlock TextDecorations="Underline">Memory information</TextBlock>
+            </Label>
+            <Label Content="Virtual and physical address size:" FontFamily ="Georgia" FontSize ="16" HorizontalAlignment="Left" Margin="55,60,0,0" VerticalAlignment="Top"/>
+            <Label Name="label1" Content="" FontFamily ="Georgia" FontSize ="18" FontWeight="Bold" HorizontalContentAlignment="Left" Margin="786,130,180,0" VerticalAlignment="Top" Height="30"/>
+            <Label Name="label2" Content="" FontFamily ="Georgia" FontSize ="18" FontWeight="Bold" HorizontalContentAlignment="Left" Margin="786,177,180,0" VerticalAlignment="Top"/>
+            <Label Content="Virtual address size (number of address bits supported by the processor for a virtual address):" FontFamily ="Georgia" FontSize ="16" HorizontalAlignment="Left" Margin="92,130,0,0" VerticalAlignment="Top"/>
+            <Label Content="Physical address size (number of address bits supported by the processor for a physical address):" FontFamily ="Georgia" FontSize ="16" HorizontalAlignment="Left" Margin="92,181,0,0" VerticalAlignment="Top"/>
+            <Label Content="bits" FontFamily ="Georgia" FontSize ="18" FontWeight="Bold" HorizontalContentAlignment="Left" Margin="833,128,84,0" VerticalAlignment="Top"/>
+            <Label Content="bits" FontFamily ="Georgia" FontSize ="18" FontWeight="Bold" HorizontalContentAlignment="Left" Margin="833,177,84,0" VerticalAlignment="Top"/>
+        </Grid>
+    </ScrollViewer>
+</Window>

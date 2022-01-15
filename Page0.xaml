@@ -1,0 +1,36 @@
+﻿<Window x:Class="WpfApp1.Page0"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Grade my PC" Height="545.212" Width="1033.448" Background="#D6ECFF" WindowStartupLocation="CenterScreen">
+    <ScrollViewer >
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label FontFamily ="Georgia" FontSize ="16" HorizontalAlignment="Left" Margin="39,10,0,0" VerticalAlignment="Top">
+                <TextBlock TextDecorations="Underline">Grade my PC</TextBlock>
+            </Label>
+            <Label Content="Performs all benchmarks and evaluates the performance:" FontFamily ="Georgia" FontSize ="16" FontWeight ="Bold" HorizontalAlignment="Left" Margin="111,71,0,0" VerticalAlignment="Top" Width="675"/>
+            <DataGrid Name="dataGrid" RowHeaderWidth="0" HorizontalAlignment="Left" IsReadOnly="True" GridLinesVisibility="Vertical" VerticalScrollBarVisibility="Visible" RowBackground="#FFDFCC" AlternatingRowBackground="#D6ECFF" Background ="#FFDFCC" Height="256" Margin="85,174,0,0" VerticalAlignment="Top" Width="840" RowHeight="30">
+                <DataGrid.Columns >
+                    <DataGridTextColumn Header = "Evaluated characteristics" Width="450" Binding="{Binding info}"/>
+                    <DataGridTextColumn Header = "Grade"  Width="375" Binding="{Binding grade}"/>
+                </DataGrid.Columns>
+                <DataGrid.CellStyle>
+                    <Style TargetType="DataGridCell">
+                        <Setter Property="FontWeight" Value="Normal" />
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding info}" Value="OVERALL GRADE">
+                                <Setter Property="FontWeight" Value="Bold"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </DataGrid.CellStyle>
+            </DataGrid>
+        </Grid>
+    </ScrollViewer>
+</Window>

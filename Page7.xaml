@@ -1,0 +1,39 @@
+﻿<Window x:Class="WpfApp1.Page7"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Cache memory parametres" Height="652.213" Width="1102.448" Background="#D6ECFF" WindowStartupLocation="CenterScreen">
+    <ScrollViewer >
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label FontFamily ="Georgia" FontSize ="16" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top">
+                <TextBlock TextDecorations="Underline">Memory information</TextBlock>
+            </Label>
+            <Label Content="Cache memory parameters:" FontFamily ="Georgia" FontSize ="16" HorizontalAlignment="Left" Margin="66,59,0,0" VerticalAlignment="Top" Width="210"/>
+            <DataGrid Name="dataGrid" RowHeaderWidth="0" IsReadOnly="True" GridLinesVisibility="Vertical" VerticalScrollBarVisibility="Visible" RowBackground="#FFDFCC" AlternatingRowBackground="#D6ECFF" Background ="#FFDFCC" Height="435" Margin="40,136,40,0" VerticalAlignment="Top" RowHeight="30">
+                <DataGrid.Columns >
+                    <DataGridTextColumn Header = "Information" Width="340" Binding="{Binding cacheInfo}"/>
+                    <DataGridTextColumn Header = "Cache info 1" Width="160" Binding="{Binding info1}"/>
+                    <DataGridTextColumn Header = "Cache info 2"  Width="160" Binding="{Binding info2}"/>
+                    <DataGridTextColumn Header = "Cache info 3" Width="160" Binding="{Binding info3}"/>
+                    <DataGridTextColumn Header = "Cache info 4"  Width="160" Binding="{Binding info4}"/>
+                </DataGrid.Columns>
+                <DataGrid.CellStyle>
+                    <Style TargetType="DataGridCell">
+                        <Setter Property="FontWeight" Value="Normal" />
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding id}" Value="AVERAGE">
+                                <Setter Property="FontWeight" Value="Bold"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </DataGrid.CellStyle>
+            </DataGrid>
+        </Grid>
+    </ScrollViewer>
+</Window>

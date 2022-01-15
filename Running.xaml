@@ -1,0 +1,14 @@
+﻿<Window x:Class="WpfApp1.Running"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:fa="http://schemas.fontawesome.io/icons/"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Loading..." Height="172.871" Width="460" Background="#D6ECFF" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="Running..." FontFamily ="Georgia" FontSize ="18" HorizontalContentAlignment="Center" Margin="-48,10,136,0" VerticalAlignment="Top"/>
+        <fa:ImageAwesome Icon="Cog" Spin="True" Width ="50" SpinDuration="5" />
+    </Grid>
+</Window>

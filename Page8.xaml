@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfApp1.Page8"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="L2 Cache features" Height="351.12" Width="939.698" Background="#D6ECFF" WindowStartupLocation="CenterScreen">
+    <ScrollViewer >
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label FontFamily ="Georgia" FontSize ="16" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top">
+                <TextBlock TextDecorations="Underline">Memory information</TextBlock>
+            </Label>
+            <Label Content="L2 Cache features:" FontFamily ="Georgia" FontSize ="16" HorizontalAlignment="Left" Margin="55,60,0,0" VerticalAlignment="Top"/>
+            <Label Name="label1" Content="" FontFamily ="Georgia" FontSize ="18" FontWeight="Bold" HorizontalContentAlignment="Left" Margin="463,109,398,0" VerticalAlignment="Top"/>
+            <Label Name="label2" Content="" FontFamily ="Georgia" FontSize ="18" FontWeight="Bold" HorizontalContentAlignment="Left" Margin="463,158,281,0" VerticalAlignment="Top"/>
+            <Label Name="label3" Content="" FontFamily ="Georgia" FontSize ="18" FontWeight="Bold" HorizontalContentAlignment="Left" Margin="463,212,398,0" VerticalAlignment="Top"/>
+            <Label Content="L2 Cache size:" FontFamily ="Georgia" FontSize ="16" HorizontalAlignment="Left" Margin="286,109,0,0" VerticalAlignment="Top"/>
+            <Label Content="L2 Cache associativity:" FontFamily ="Georgia" FontSize ="16" HorizontalAlignment="Left" Margin="286,162,0,0" VerticalAlignment="Top"/>
+            <Label Content="L2 Cache line size:" FontFamily ="Georgia" FontSize ="16" HorizontalAlignment="Left" Margin="286,214,0,0" VerticalAlignment="Top"/>
+            <Label Content="KB" FontFamily ="Georgia" FontSize ="18" FontWeight="Bold" HorizontalContentAlignment="Left" Margin="522,111,318,0" VerticalAlignment="Top"/>
+            <Label Content="bytes" FontFamily ="Georgia" FontSize ="18" FontWeight="Bold" HorizontalContentAlignment="Left" Margin="522,214,318,0" VerticalAlignment="Top"/>
+        </Grid>
+    </ScrollViewer>
+</Window>

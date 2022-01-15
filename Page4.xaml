@@ -1,0 +1,29 @@
+﻿<Window x:Class="WpfApp1.Page4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Running frequencies of processor" Height="351.12" Width="939.698" Background="#D6ECFF" WindowStartupLocation="CenterScreen">
+    <ScrollViewer >
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label FontFamily ="Georgia" FontSize ="16" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top">
+                <TextBlock TextDecorations="Underline">Processor information</TextBlock>
+            </Label>
+            <Label Content="Running frequencies of processor:" FontFamily ="Georgia" FontSize ="16" HorizontalAlignment="Left" Margin="55,60,0,0" VerticalAlignment="Top"/>
+            <Label Name="label1" Content="" FontFamily ="Georgia" FontSize ="18" FontWeight="Bold" HorizontalContentAlignment="Left" Margin="496,131,328,0" VerticalAlignment="Top"/>
+            <Label Name="label2" Content="" FontFamily ="Georgia" FontSize ="18" FontWeight="Bold" HorizontalContentAlignment="Left" Margin="496,180,328,0" VerticalAlignment="Top"/>
+            <Label Name="label3" Content="" FontFamily ="Georgia" FontSize ="18" FontWeight="Bold" HorizontalContentAlignment="Left" Margin="496,234,328,0" VerticalAlignment="Top"/>
+            <Label Content="Processor Base Frequency:" FontFamily ="Georgia" FontSize ="16" HorizontalAlignment="Left" Margin="272,131,0,0" VerticalAlignment="Top"/>
+            <Label Content="Maximum Frequency:" FontFamily ="Georgia" FontSize ="16" HorizontalAlignment="Left" Margin="272,184,0,0" VerticalAlignment="Top"/>
+            <Label Content="Bus (Reference) Frequency:" FontFamily ="Georgia" FontSize ="16" HorizontalAlignment="Left" Margin="272,236,0,0" VerticalAlignment="Top"/>
+            <Label Content="MHz" FontFamily ="Georgia" FontSize ="18" FontWeight="Bold" HorizontalContentAlignment="Left" Margin="592,131,248,0" VerticalAlignment="Top"/>
+            <Label Content="MHz" FontFamily ="Georgia" FontSize ="18" FontWeight="Bold" HorizontalContentAlignment="Left" Margin="592,180,248,0" VerticalAlignment="Top"/>
+            <Label Content="MHz" FontFamily ="Georgia" FontSize ="18" FontWeight="Bold" HorizontalContentAlignment="Left" Margin="592,234,248,0" VerticalAlignment="Top"/>
+        </Grid>
+    </ScrollViewer>
+</Window>
